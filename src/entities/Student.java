@@ -2,20 +2,24 @@ package entities;
 
 import java.util.ArrayList;
 
+//classe
 public class Student extends User {
-
-
+    //vibilidade
     private Integer year_registration;
     private Integer current_semester;
-    private ArrayList<Course> courses = new ArrayList<>();
+    private ArrayList<Course> courses;//associoacao
 
-    public Student(Integer registration, String name, String last_name, String email, String password, ArrayList<Address> user_address, Integer year_registration, Integer current_semester, ArrayList<Course> courses) {
+    //metodo construtor e polimorfismo
+    public Student(Integer registration, String name, String last_name, String email, String password,
+                   ArrayList<Address> user_address, Integer year_registration, Integer current_semester,
+                   ArrayList<Course> courses) {
         super(registration, name, last_name, email, password, user_address);
         this.year_registration = year_registration;
         this.current_semester = current_semester;
         this.courses = courses;
     }
 
+    //encapsulamento
     public Integer getYear_registration() {
         return year_registration;
     }

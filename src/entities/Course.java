@@ -1,15 +1,18 @@
 package entities;
 
+//classe
 public class Course {
-
+    //visibilidade
     private Integer id;
     private String name;
 
+    //metodo construtor e polimorfismo
     public Course(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
 
+    //encapsulamento
     public Integer getId() {
         return id;
     }

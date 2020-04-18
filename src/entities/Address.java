@@ -1,13 +1,15 @@
 package entities;
 
+//classe
 public class Address {
-
+    //visibilidade
     private Integer id;
     private String cep;
     private String public_place;
     private String uf;
     private String city;
 
+    //metodo construtor e polimorfismo
     public Address(Integer id, String cep, String public_place, String uf, String city) {
         this.id = id;
         this.cep = cep;
@@ -16,6 +18,7 @@ public class Address {
         this.city = city;
     }
 
+    //encapsulamento
     public Integer getId() {
         return id;
     }
